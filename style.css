@@ -11,7 +11,7 @@ header{
 
 main{
   width: 960px;
-  margin: 50px;
+  margin: 50px auto;
   display: flex;
 }
 
@@ -64,4 +64,20 @@ main{
 footer{
   height: 50px;
   background-color: #AAAAAA;
+}
+
+@media screen and (max-width: 768px){
+  main{
+    width: 100%;
+    display: inline-block;
+  }
+  
+  .step-box{
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  .step-box:last-child{
+    margin-bottom: 0px;
+  }
 }
